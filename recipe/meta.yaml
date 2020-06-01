@@ -1,4 +1,4 @@
-{% set version = "11.96" %}
+{% set version = "11.99" %}
 
 package:
   name: exiftool
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://exiftool.org/Image-ExifTool-{{ version }}.tar.gz
-  sha256: 17bc517851dac7b7074857931ed28fe0edc523b50038193c9f3f4ce3779e40d9
+  sha256: 33ed6da3d292652bfbc3131ac533bd8fdfbd576699f9232dbcdfe74beccb70f9
   patches:
     # I know this patch removes the -w flag.
     # YOu need env with the -S flag for linux, not all versions of env have it
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://exiftool.org/
-  license:  GPL-1.0-or-later
+  license: GPL-1.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
   summary: Read, Write and Edit Meta Information!
