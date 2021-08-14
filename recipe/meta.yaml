@@ -15,7 +15,7 @@ source:
     - usr_bin_env_perl.diff
 
 build:
-  number: 0
+  number: 1
   script:
     - perl Makefile.PL --prefix={{ PREFIX }}                      # [not win]
     - perl Makefile.PL PREFIX={{ PREFIX }} LIB={{ LIBRARY_LIB }}  # [win]
