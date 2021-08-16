@@ -1,4 +1,6 @@
 {% set version = "12.30" %}
+# https://metacpan.org/dist/Image-ExifTool/changes
+# Use ^^^^^^^^^^^^^^^^ to check Check if the release is a production release.
 
 package:
   name: exiftool
