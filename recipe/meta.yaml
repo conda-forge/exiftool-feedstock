@@ -1,12 +1,12 @@
-{% set version = "11.99" %}
+{% set version = "12.30" %}
 
 package:
   name: exiftool
   version: {{ version }}
 
 source:
-  url: https://exiftool.org/Image-ExifTool-{{ version }}.tar.gz
-  sha256: 33ed6da3d292652bfbc3131ac533bd8fdfbd576699f9232dbcdfe74beccb70f9
+  url: https://cpan.metacpan.org/authors/id/E/EX/EXIFTOOL/Image-ExifTool-{{ version }}.tar.gz
+  sha256: 3be7cda70b471df589c75a4adbb71bae62e633022b0ba62585f3bcd91b35544f
   patches:
     # I know this patch removes the -w flag.
     # YOu need env with the -S flag for linux, not all versions of env have it
