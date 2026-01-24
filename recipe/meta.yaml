@@ -9,12 +9,6 @@ package:
 source:
   url: https://github.com/exiftool/exiftool/archive/refs/tags/{{ version }}.tar.gz
   sha256: 1fb0c8daf0b0aab8242d6da6598926f60d0c2a3954a2abe19d0574e5a9ed914b
-  patches:
-    # I know this patch removes the -w flag.
-    # YOu need env with the -S flag for linux, not all versions of env have it
-    # finally, the -w flag is discouraged within perl
-    # https://perldoc.perl.org/warnings.html
-    - usr_bin_env_perl.diff
 
 build:
   number: 0
