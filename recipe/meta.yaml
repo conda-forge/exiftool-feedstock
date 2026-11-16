@@ -1,4 +1,4 @@
-{% set version = "13.63" %}
+{% set version = "13.64" %}
 # https://metacpan.org/dist/Image-ExifTool/changes
 # Use ^^^^^^^^^^^^^^^^ to check Check if the release is a production release.
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/exiftool/exiftool/archive/refs/tags/{{ version }}.tar.gz
-  sha256: a306420abf76dbfc5b4ca1a9de7bb2523bc93500a075c4fc9ce543b15f09195f
+  sha256: 6ed24bfbe1ce38d0e7800f8e4132f9bfce2a29f4256d924d0458f59fd64b513a
 
 build:
   number: 0
